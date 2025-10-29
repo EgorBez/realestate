@@ -1,0 +1,45 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 35px;
+}
+
+.sectionTitle {
+  width: fit-content;
+  font-size: 30px;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  padding: 5px 10px;
+} 
+
+.sectionTitleRed {
+  background-color: var(--color-secondary);
+}
+
+.sectionSubtitle {
+  font-size: 18px;
+  margin-block-end: 20px;
+}
+
+.sectionCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.sectionButton {
+  align-self: center;
+  margin-block-start: 10px;
+  padding: 5px 10px;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.sectionButton:hover {
+  background-color: rgba(33, 150, 33, 0.652);
+}

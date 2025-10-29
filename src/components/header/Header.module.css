@@ -1,0 +1,103 @@
+.logo {
+  margin-inline-start: 3%;
+  width: 100px;
+}
+
+.logoImg {
+  display: block;
+  max-width: 100%;
+}
+
+.burger {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.burgerIcon {
+  width: 28px;
+  height: 28px;
+}
+
+.active {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+.nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.navItem {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(30, 30, 30);
+}
+
+.navItem:hover {
+  color: black;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* отступ от текста */
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+@media (width < 768px) {
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    padding: 5px;
+    z-index: 9;
+  }
+
+  .nav {
+    align-items: flex-start;
+    display: none;
+    position: fixed;
+    transform: translateX(0);
+    background-color: white;
+    flex-direction: column;
+    margin: 0;
+    inset: 0;
+    padding: 120px 20px;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .burger {
+    height: 24px;
+    aspect-ratio: 1;
+    display: block;
+    position: relative;
+    z-index: 15;
+  }
+
+  .navOpen {
+    display: flex;
+  }
+}

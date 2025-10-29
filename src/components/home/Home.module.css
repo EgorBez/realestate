@@ -1,0 +1,45 @@
+.mainBanner {
+  position: relative;
+  display: grid;
+  place-content: center;
+  height: 95vh;
+  width: 100%;
+  background:
+  radial-gradient(ellipse at center, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0) 90% ),
+  url("/main2.png");
+  background-size: cover;
+}
+
+/* .mainBanner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.499);
+} */
+
+.mainText {
+  position: relative;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.592);
+  color: #ffffff;
+}
+
+.mainHeader {
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.mainAgency {
+  text-align: center;
+  font-size: 35px;
+}
+
+@media (width < 768px){
+  .mainHeader{
+    font-size: 30px;
+  }
+
+  .mainAgency{
+    font-size: 20px;
+  }
+}

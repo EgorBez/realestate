@@ -1,0 +1,9 @@
+:root{
+  --color-primary: rgba(27, 162, 27, 0.473);
+  --color-secondary: #F7B86A;
+}
+
+.pageContainer{
+  max-width: 70%;
+  margin: 0 auto;
+}
