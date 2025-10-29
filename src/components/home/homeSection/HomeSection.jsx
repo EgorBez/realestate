@@ -1,7 +1,8 @@
 import styles from "./HomeSection.module.css";
 import Card from "../../card/Card";
+import { Link } from "react-router";
 
-const HomeSection = ({ title, subtitle, items, isRed, showButton=true }) => {
+const HomeSection = ({ title, subtitle, items, isRed, showButton=true, buttonLink}) => {
   return (
     <section className={styles.section}>
       <h2 className={`${styles.sectionTitle} ${isRed ? styles.sectionTitleRed : ''}`}>{title}</h2>
@@ -19,7 +20,7 @@ const HomeSection = ({ title, subtitle, items, isRed, showButton=true }) => {
           ))}
         </div>
       )}
-      {showButton && <button className={styles.sectionButton}>Смотреть еще</button>}
+      {showButton && <Link className={styles.sectionButton} to={buttonLink}>Смотреть еще</Link>}
     </section>
   );
 };

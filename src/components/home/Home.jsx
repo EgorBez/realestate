@@ -18,12 +18,12 @@ const Home = () => {
         </div>
       </div>
       <div className="pageContainer">
-        <HomeSection title="Продажа недвижимости" subtitle="квартиры для продажи" items={salesData}/>
-        <HomeSection title="Аренда недвижимости" subtitle="квартиры для аренды" items={rentData}/>
-        <HomeSection title="Горячие предложения" subtitle="квартиры для аренды по хорошим ценам" items={hotData} isRed/>
+        <HomeSection title="Продажа недвижимости" subtitle="квартиры для продажи" items={salesData} buttonLink="/sale"/>
+        <HomeSection title="Аренда недвижимости" subtitle="квартиры для аренды" items={rentData} buttonLink="/rent"/>
+        <HomeSection title="Горячие предложения" subtitle="квартиры для аренды по хорошим ценам" items={hotData} isRed buttonLink="/hotrent"/>
         <HomeSection title="Остальные услуги" subtitle="кликайте и узнайте подробнее о каждой услуге" items={servicesData} showButton={false}/>
-        <HomeSection title="Прокат автомобилей" subtitle="Авто в аренду" items={carData} />
-        <HomeSection title="Прокат скутеров" subtitle="байки в аренду" items={bikeData} />
+        <HomeSection title="Прокат автомобилей" subtitle="Авто в аренду" items={carData} buttonLink="/carsrent"/>
+        <HomeSection title="Прокат скутеров" subtitle="байки в аренду" items={bikeData} buttonLink="/bikesrent"/>
       </div>
     </>
   );
