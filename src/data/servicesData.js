@@ -15,7 +15,7 @@ const servicesData = [
     price: "ВУ, банковские карты, открытие компании и тд.",
   },
   {
-    image: "/documents.png",
+    image: "/fastTreck.png",
     title: "",
     price: "Гарантированный проход через границу или фаст трек",
   }

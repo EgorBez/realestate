@@ -1,13 +1,13 @@
-import styles from "./Sale.module.css";
-import salesData from "../../data/salesData";
+import styles from "./Rent.module.css";
+import rentData from "../../data/rentData";
 import Card from "../card/Card";
 
-const Sale = () => {
+const Rent = () => {
   return (
     <div className="pageContainer">
-      <h1 className="pageHeader">Продажа недвижимости</h1>
+      <h1 className="pageHeader">Аренда недвижимости</h1>
       <div className="gridContainer">
-        {salesData.map((item, index) => (
+        {rentData.map((item, index) => (
           <Card
             key={index}
             image={item.image}
@@ -21,4 +21,4 @@ const Sale = () => {
   );
 };
 
-export default Sale;
+export default Rent;
