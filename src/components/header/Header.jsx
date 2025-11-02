@@ -41,26 +41,30 @@ const Header = () => {
           главная
         </NavLink>
 
-          
-        <NavLink
-          to="/rent"
-          className={({ isActive }) =>
-            isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
-          }
-          onClick={() => setMenuOpen(false)}
-        >
-          Аренда недвижимости
-        </NavLink>
+        <div className={styles.dropdown}>
+          <span className={styles.navItem}>Недвижимость</span>
+          <div className={styles.dropdownContent}>
+          <NavLink
+            to="/rent"
+            className={({ isActive }) =>
+              isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
+            }
+            onClick={() => setMenuOpen(false)}
+          >
+            Аренда недвижимости
+          </NavLink>
 
-        <NavLink
-          to="/sale"
-          className={({ isActive }) =>
-            isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
-          }
-          onClick={() => setMenuOpen(false)}
-        >
-          Продажа недвижимости
-        </NavLink>
+          <NavLink
+            to="/sale"
+            className={({ isActive }) =>
+              isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
+            }
+            onClick={() => setMenuOpen(false)}
+          >
+            Продажа недвижимости
+          </NavLink>
+          </div>
+        </div>
 
         <NavLink
           to="/hotrent"

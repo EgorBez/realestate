@@ -1,11 +1,11 @@
 const servicesData = [
   {
-    image: "/oceandrive.jpg",
+    image: "/exchange.jpg",
     title: "",
     price: "Обмен валют",
   },
   {
-    image: "/coteazur.jpg",
+    image: "/partys.jpg",
     title: "",
     price: "Экскурсии и мероприятия",
   },
