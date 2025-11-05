@@ -6,6 +6,8 @@ import Home from "./components/home/Home";
 import Sale from "./components/sale/Sale";
 import Rent from "./components/rent/Rent";
 import Hotrent from "./components/hotrent/Hotrent";
+import Cars from "./components/cars/Cars";
+import Bikes from "./components/bikes/Bikes";
 
 function App() {
   return (
@@ -16,8 +18,12 @@ function App() {
         <Route path="/sale" element={<Sale />} />
         <Route path="/rent" element={<Rent />} />
         <Route path="/hotrent" element={<Hotrent />} />
-        <Route path="/carsrent" element={<Home />} />
-        <Route path="/bikesrent" element={<Home />} />
+        <Route path="/carsrent" element={<Cars />} />
+        <Route path="/bikesrent" element={<Bikes />} />
+        <Route path="/exchange" element={<Home />} />
+        <Route path="/documents" element={<Home />} />
+        <Route path="/events" element={<Home />} />
+        <Route path="/fasttrack" element={<Home />} />
       </Routes>
     </>
   );

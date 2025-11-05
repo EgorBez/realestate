@@ -5,7 +5,7 @@ import Card from "../card/Card";
 const Sale = () => {
   return (
     <div className="pageContainer">
-      <h1 className="pageHeader">Продажа недвижимости</h1>
+      <h1 className="pageHeader">Продажа недвижимости</h1> 
       <div className="gridContainer">
         {salesData.map((item, index) => (
           <Card

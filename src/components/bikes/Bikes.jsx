@@ -1,13 +1,13 @@
-import styles from "./Hotrent.module.css";
-import hotData from "../../data/hotData";
+import styles from "./Bikes.module.css";
+import bikeData from "../../data/bikeData";
 import Card from "../card/Card";
 
-const Hotrent = () => {
+const Bikes = () => {
   return (
     <div className="pageContainer">
-      <h1 className="pageHeader">Горячие предложения</h1>
+      <h1 className="pageHeader">Аренда скутеров</h1>
       <div className="gridContainer">
-        {hotData.map((item, index) => (
+        {bikeData.map((item, index) => (
           <Card
             key={index}
             image={item.image}
@@ -22,4 +22,4 @@ const Hotrent = () => {
   );
 };
 
-export default Hotrent;
+export default Bikes;

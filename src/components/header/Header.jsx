@@ -76,17 +76,35 @@ const Header = () => {
           горячие предложения
         </NavLink>
 
-        <NavLink
-          to="/transport"
-          className={({ isActive }) =>
-            isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
-          }
-          onClick={() => setMenuOpen(false)}
-        >
-          аренда транспорта
-        </NavLink>
+         <div className={styles.dropdown}>
+          <span className={styles.navItem}>Аренда транспорта</span>
+          <div className={styles.dropdownContent}>
+          <NavLink
+            to="/carsrent"
+            className={({ isActive }) =>
+              isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
+            }
+            onClick={() => setMenuOpen(false)}
+          >
+            Автомобили
+          </NavLink>
 
-        <NavLink
+          <NavLink
+            to="/bikesrent"
+            className={({ isActive }) =>
+              isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
+            }
+            onClick={() => setMenuOpen(false)}
+          >
+            Скутеры
+          </NavLink>
+          </div>
+        </div>
+
+         <div className={styles.dropdown}>
+          <span className={styles.navItem}>Остальные услуги</span>
+          <div className={styles.dropdownContent}>
+          <NavLink
           to="/exchange"
           className={({ isActive }) =>
             isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
@@ -115,6 +133,19 @@ const Header = () => {
         >
           экскурсии и мероприятия
         </NavLink>
+
+         <NavLink
+          to="/fasttrack"
+          className={({ isActive }) =>
+            isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
+          }
+          onClick={() => setMenuOpen(false)}
+        >
+          Гарантированный проход через границу или фаст трек
+        </NavLink>
+          </div>
+        </div>
+
       </nav>
     </header>
   );
