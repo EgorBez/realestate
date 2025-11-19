@@ -12,7 +12,7 @@ const HomeSection = ({ title, subtitle, items, isRed, showButton=true, buttonLin
           {items.slice(0,4).map((item, index) => (
             <Card
               key={index}
-              image={item.image}
+              images={item.images}
               title={item.title}
               price={item.price}
               oldPrice={item.oldPrice}

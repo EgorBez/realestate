@@ -10,7 +10,7 @@ const Hotrent = () => {
         {hotData.map((item, index) => (
           <Card
             key={index}
-            image={item.image}
+            images={item.images}
             title={item.title}
             price={item.price}
             oldPrice={item.oldPrice}

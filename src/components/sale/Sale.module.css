@@ -5,6 +5,9 @@
   margin-block-start: 50px;
 }
 
+.pageTitle{
+  background-color: var(--color-primary);
+}
 
 .gridContainer {
   display: grid;

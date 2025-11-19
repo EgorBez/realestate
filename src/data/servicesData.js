@@ -1,21 +1,21 @@
 const servicesData = [
   {
-    image: "/exchange.jpg",
+    images: ["/exchange.jpg"],
     title: "",
     price: "Обмен валют",
   },
   {
-    image: "/partys.jpg",
+    images: ["/partys.jpg"],
     title: "",
     price: "Экскурсии и мероприятия",
   },
   {
-    image: "/documents.png",
+    images: ["/documents.png"],
     title: "",
     price: "ВУ, банковские карты, открытие компании и тд.",
   },
   {
-    image: "/fastTreck.png",
+    images: ["/fastTreck.png"],
     title: "",
     price: "Гарантированный проход через границу или фаст трек",
   }
