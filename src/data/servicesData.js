@@ -1,23 +1,27 @@
 const servicesData = [
   {
-    images: ["/exchange.jpg"],
+    images: ["/exchange.webp"],
     title: "",
     price: "Обмен валют",
+    route: "/exchange"
   },
   {
-    images: ["/partys.jpg"],
+    images: ["/partys.webp"],
     title: "",
     price: "Экскурсии и мероприятия",
+    route: "/events"
   },
   {
-    images: ["/documents.png"],
+    images: ["/documents.webp"],
     title: "",
     price: "ВУ, банковские карты, открытие компании и тд.",
+    route: "/documents"
   },
   {
-    images: ["/fastTreck.png"],
+    images: ["/fastTrack.webp"],
     title: "",
     price: "Гарантированный проход через границу или фаст трек",
+    route: "/fasttrack"
   }
 
 ];

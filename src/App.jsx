@@ -11,10 +11,21 @@ import Bikes from "./components/bikes/Bikes";
 import Exchange from "./components/exchange/Exchange";
 import Fasttrack from "./components/Fasttrack/Fasttrack";
 import Documents from "./components/documents/Documents";
+import SocialButton from "./components/socialButton/SocialButton";
 
 function App() {
   return (
     <>
+      <SocialButton
+        route="https://t.me/HappyHomeAsiaAgency"
+        image="/telegram.png"
+        order={0}
+      />
+      <SocialButton
+        route="https://wa.me/66940500750"
+        image="/whatsapp.svg"
+        order={1}
+      />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

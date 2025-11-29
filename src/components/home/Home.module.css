@@ -6,7 +6,7 @@
   width: 100%;
   background:
   radial-gradient(ellipse at center, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0) 90% ),
-  url("/main2.png");
+  url("/main2.webp");
   background-size: cover;
   z-index: -1;
 }

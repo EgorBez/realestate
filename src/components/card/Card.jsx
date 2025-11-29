@@ -1,7 +1,8 @@
 import styles from "./Card.module.css";
 import { useState } from "react";
+import { Link } from "react-router";
 
-const Card = ({ images = [], title, price, oldPrice }) => {
+const Card = ({ images = [], title, price, oldPrice, route }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const parsePrice = (str) => {
     if (!str) {
@@ -26,8 +27,8 @@ const Card = ({ images = [], title, price, oldPrice }) => {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  return (
-    <div className={styles.card}>
+  const cardContent = (
+    <>
       <div className={styles.cardImgWrapper}>
         <img
           className={styles.cardImg}
@@ -38,13 +39,19 @@ const Card = ({ images = [], title, price, oldPrice }) => {
           <>
             <button
               className={`${styles.arrow} ${styles.arrowLeft}`}
-              onClick={prevImage}
+              onClick={(e) => {
+                e.preventDefault();
+                prevImage();
+              }}
             >
               ◀
             </button>
             <button
               className={`${styles.arrow} ${styles.arrowRight}`}
-              onClick={nextImage}
+              onClick={(e) => {
+                e.preventDefault();
+                nextImage();
+              }}
             >
               ▶
             </button>
@@ -55,7 +62,10 @@ const Card = ({ images = [], title, price, oldPrice }) => {
                   className={`${styles.dot} ${
                     i === currentIndex ? styles.activeDot : ""
                   }`}
-                  onClick={() => setCurrentIndex(i)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setCurrentIndex(i);
+                  }}
                 ></span>
               ))}
             </div>
@@ -70,7 +80,18 @@ const Card = ({ images = [], title, price, oldPrice }) => {
           <span className={styles.cardDiscount}>-{discount}%</span>
         </div>
       )}
-    </div>
+    </>
+  );
+  const isExternal = route?.startsWith("https");
+
+  return isExternal ? (
+    <a href={route} target="_blank" className={styles.card}>
+      {cardContent}
+    </a>
+  ) : (
+    <Link to={route} className={styles.card}>
+      {cardContent}
+    </Link>
   );
 };
 

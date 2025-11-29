@@ -1,6 +1,6 @@
 const salesData = [
   {
-    images: ["/solaire1.jpg", "/solaire2.jpg", "/solaire3.jpg", "/solaire4.jpg"],
+    images: ["/solaire1.webp", "/solaire2.webp", "/solaire3.webp", "/solaire4.webp"],
     title: "Grand Solaire",
     price: "3.280.000",
   },
@@ -55,7 +55,7 @@ const salesData = [
     price: "2,767,000",
   },
   {
-    images: ["/embassy1.webp", "/embassy2.webp", "/embassy3.jpg", "/embassy4.webp", "/embassy5.webp"],
+    images: ["/embassy1.webp", "/embassy2.webp", "/embassy3.webp", "/embassy4.webp", "/embassy5.webp"],
     title: "Embassy Life",
     price: "2,490,000",
   },

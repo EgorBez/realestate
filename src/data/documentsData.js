@@ -1,23 +1,23 @@
 const documents = [
   {
-    images: ["/gallery.jpg"],
+    images: ["/companyOpening.webp"],
     title: "Открытие компании под ключ",
     price: "120000 бат",
   },
   {
-    images: ["/chaiyaphruek.jpg"],
+    images: ["/accountOpening.webp"],
     title: "Открытие банковского счёта для компании",
     price: "5000 бат",
   },
   {
-    images: ["/tropical1.webp"],
+    images: ["/workPermit.webp"],
     title: "Получение Work Permit (Разрешение на работу)",
-    price: "",
+    price: "15000 бат",
   },
   {
-    images: ["/lumpini.jpg"],
+    images: ["/drivingLicence.webp"],
     title: "Получение водительских удостоверений (A и B)",
-    price: "",
+    price: "6500 бат",
   },  
 ];
 

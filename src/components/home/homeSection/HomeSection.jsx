@@ -16,6 +16,7 @@ const HomeSection = ({ title, subtitle, items, isRed, showButton=true, buttonLin
               title={item.title}
               price={item.price}
               oldPrice={item.oldPrice}
+              route={item.route}
             />
           ))}
         </div>

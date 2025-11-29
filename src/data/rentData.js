@@ -3,6 +3,7 @@ const rentData = [
     images: ["/oceandrive1.webp", "/oceandrive2.webp", "/oceandrive3.webp", "/oceandrive4.webp", "/oceandrive5.webp", "/oceandrive6.webp", "/oceandrive7.webp"],
     title: "Riviera Ocean Drive",
     price: "40000 бат",
+    route: "https://t.me/HappyHomePattaya/13/5570"
   },
   {
     images: ["/coteazur1.webp", "/coteazur2.webp", "/coteazur3.webp", "/coteazur4.webp", "/coteazur5.webp", "/coteazur6.webp", "/coteazur7.webp"],

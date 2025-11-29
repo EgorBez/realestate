@@ -1,0 +1,23 @@
+.socialLink {
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+@media (width < 600px) {
+  .socialLink {
+    right: 5px;
+  }
+}
