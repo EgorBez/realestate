@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "egorbez.github.io",
+  "homepage": "https://egorbez.github.io/realestate",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",

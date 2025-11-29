@@ -1,6 +1,6 @@
 const documents = [
   {
-    images: ["/companyOpening.webp"],
+    images: ["companyOpening.webp"],
     title: "Открытие компании под ключ",
     price: "120000 бат",
   },
