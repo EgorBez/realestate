@@ -1,16 +1,16 @@
 const carData = [
   {
-    images: ["/vios1.webp", "/vios2.webp", "/vios3.webp", "/vios4.webp", "/vios5.webp", "/vios6.webp", "/vios7.webp"],
+    images: ["vios1.webp", "vios2.webp", "vios3.webp", "vios4.webp", "vios5.webp", "vios6.webp", "vios7.webp"],
     title: "Toyota Vios",
     price: "от 1000 бат",
   },
   {
-    image: "/coteazur.jpg",
+    image: "coteazur.jpg",
     title: "Seven Seas Cote d Azur",
     price: "от 8000 бат",
   },
   {
-    image: "/copacabanna.jpg",
+    image: "copacabanna.jpg",
     title: "Copacabanna",
     price: "от 75000 бат",
   }

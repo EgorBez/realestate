@@ -5,17 +5,17 @@ const documents = [
     price: "120000 бат",
   },
   {
-    images: ["/accountOpening.webp"],
+    images: ["accountOpening.webp"],
     title: "Открытие банковского счёта для компании",
     price: "5000 бат",
   },
   {
-    images: ["/workPermit.webp"],
+    images: ["workPermit.webp"],
     title: "Получение Work Permit (Разрешение на работу)",
     price: "15000 бат",
   },
   {
-    images: ["/drivingLicence.webp"],
+    images: ["drivingLicence.webp"],
     title: "Получение водительских удостоверений (A и B)",
     price: "6500 бат",
   },  

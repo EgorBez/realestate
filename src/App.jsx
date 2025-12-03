@@ -18,12 +18,12 @@ function App() {
     <>
       <SocialButton
         route="https://t.me/HappyHomeAsiaAgency"
-        image="/telegram.png"
+        image="telegram.png"
         order={0}
       />
       <SocialButton
         route="https://wa.me/66940500750"
-        image="/whatsapp.svg"
+        image="whatsapp.svg"
         order={1}
       />
       <Header />

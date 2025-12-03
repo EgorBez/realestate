@@ -1,6 +1,6 @@
 const bikeData = [
   {
-    image: "/vios.jpg",
+    image: "vios.jpg",
     title: "Toyota Vios",
     price: "от 1000 бат",
   },
@@ -10,7 +10,7 @@ const bikeData = [
     price: "от 8000 бат",
   },
   {
-    image: "/copacabanna.jpg",
+    image: "copacabanna.jpg",
     title: "Copacabanna",
     price: "от 75000 бат",
   }

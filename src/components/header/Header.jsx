@@ -9,7 +9,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.logo}>
         <NavLink to="/">
-          <img className={styles.logoImg} src="/logo.webp" alt="logo" />
+          <img className={styles.logoImg} src="logo.webp" alt="logo" />
         </NavLink>
       </div>
 
@@ -17,12 +17,12 @@ const Header = () => {
         {menuOpen ? (
           <img
             className={styles.burgerIcon}
-            src="/close.webp"
+            src="close.webp"
             alt="закрыть меню"
           />
         ) : (
           <img
-            src="/burger.webp"
+            src="burger.webp"
             alt="открыть меню"
             className={styles.burgerIcon}
           />

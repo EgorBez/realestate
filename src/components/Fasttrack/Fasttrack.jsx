@@ -6,7 +6,7 @@ const Fasttrack = () => {
       <h1 className="pageHeader">
         Гарантированный проход через границу или фаст трек
       </h1>
-      <img className="pageBanner" src="/fastTrackBanner.webp" alt="фаст трек" />
+      <img className="pageBanner" src="fastTrackBanner.webp" alt="фаст трек" />
       <div className="textContainer">
         <p className="pageText">
           🚦 Passage with an officer - он же зеленый коридор с гарантированным
