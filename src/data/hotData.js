@@ -3,7 +3,8 @@ const hotData = [
     images: ["gallery1.webp", "gallery2.webp", "gallery3.webp", "gallery4.webp", "gallery5.webp",],
     title: "Gallery Jomtien",
     price: "12000 бат",
-    oldPrice: "10000 бат"
+    oldPrice: "10000 бат",
+    route: "https://t.me/HappyHomePattaya/35/6330"
   },
   {
     images: ["tropical8.webp", "tropical9.webp", "tropical10.webp", "tropical11.webp", "tropical12.webp",],

@@ -54,14 +54,34 @@ const Header = () => {
             Аренда недвижимости
           </NavLink>
 
-          <NavLink
+           <NavLink
             to="/sale"
             className={({ isActive }) =>
               isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
             }
             onClick={() => setMenuOpen(false)}
           >
-            Продажа недвижимости
+            Продажа новостроек
+         </NavLink>
+
+          <NavLink
+            to="/secondary"
+            className={({ isActive }) =>
+              isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
+            }
+            onClick={() => setMenuOpen(false)}
+          >
+            Продажа вторичной недвижимости
+          </NavLink>
+
+           <NavLink
+            to="/installment"
+            className={({ isActive }) =>
+              isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
+            }
+            onClick={() => setMenuOpen(false)}
+          >
+            Продажа в рассрочку
           </NavLink>
           </div>
         </div>

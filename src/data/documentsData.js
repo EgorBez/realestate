@@ -3,6 +3,7 @@ const documents = [
     images: ["companyOpening.webp"],
     title: "Открытие компании под ключ",
     price: "120000 бат",
+    route: "https://t.me/HappyHomePattaya/19/499"
   },
   {
     images: ["accountOpening.webp"],

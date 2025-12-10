@@ -1,20 +1,19 @@
-import styles from "./Sale.module.css";
-import salesData from "../../data/salesData";
+import styles from "./Secondary.module.css";
+import secondaryData from "../../data/secondaryData";
 import Card from "../card/Card";
 
-const Sale = () => {
+const Secondary= () => {
   return (
     <div className="pageContainer">
-      <h1 className="pageHeader">Продажа новостроек</h1> 
+      <h1 className="pageHeader">Продажа вторичного жилья</h1> 
       <div className="gridContainer">
-        {salesData.map((item, index) => (
+        {secondaryData.map((item, index) => (
           <Card
             key={index}
             images={item.images}
             title={item.title}
             price={item.price}
             oldPrice={item.oldPrice}
-            route={item.route}
           />
         ))}
       </div>
@@ -22,4 +21,4 @@ const Sale = () => {
   );
 };
 
-export default Sale;
+export default Secondary;

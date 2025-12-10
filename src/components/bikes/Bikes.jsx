@@ -14,6 +14,7 @@ const Bikes = () => {
             title={item.title}
             price={item.price}
             oldPrice={item.oldPrice}
+            route={item.route}
           />
         ))}
       </div>

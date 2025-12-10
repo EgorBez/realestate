@@ -4,7 +4,7 @@ const Exchange = () => {
   return (
     <div className="pageContainer">
       <h1 className="pageHeader">Обмен валют</h1>
-      <img className="pageBanner" src="exchangeBanner.jpg" alt="Обмен валют" />
+      <img className="pageBanner" src="exchangeBanner.webp" alt="Обмен валют" />
       <div className="textContainer">
       <p className="pageText">
         Мы осуществляем обмен валют баты-рубли по хорошему курсу, оперативно и с

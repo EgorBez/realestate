@@ -12,6 +12,9 @@ import Exchange from "./components/exchange/Exchange";
 import Fasttrack from "./components/Fasttrack/Fasttrack";
 import Documents from "./components/documents/Documents";
 import SocialButton from "./components/socialButton/SocialButton";
+import Secondary from "./components/secondary/Secondary";
+import Installment from "./components/installment/Installment";
+import ObjectPage from "./components/object/objectPage";
 
 function App() {
   return (
@@ -38,6 +41,9 @@ function App() {
         <Route path="/documents" element={<Documents />} />
         <Route path="/events" element={<Home />} />
         <Route path="/fasttrack" element={<Fasttrack />} />
+        <Route path="/secondary" element={<Secondary />}/>
+        <Route path="/installment" element={<Installment />}/>
+        <Route path="/objects/:id" element={<ObjectPage />} />
       </Routes>
     </>
   );
