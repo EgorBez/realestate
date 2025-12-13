@@ -1,45 +1,120 @@
-.objectTitle{
-    margin-block-start: 80px;
+.objectTitle {
+  margin-block-start: 80px;
 }
 
-.photoContainer{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 10px;
-    border-radius: 8px;
-    overflow: hidden;
-    grid-template-rows: 200px 200px;
+.photoContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  grid-template-rows: 200px 200px;
 }
 
-.mainPhoto{
-    grid-column: 1/2;
+.mainPhoto {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.smallPhoto1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.smallPhoto2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.smallPhoto3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.smallPhoto4 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.objectTitleMobile {
+  display: none;
+}
+
+@media (width < 991px) {
+  .photoContainer {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (width < 768px) {
+  .photoContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mainPhoto {
+    grid-column: 1/3;
     grid-row: 1/3;
-}
+  }
 
-.smallPhoto1{
+  .smallPhoto1 {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+
+  .smallPhoto2 {
     grid-column: 2/3;
-    grid-row: 1/2;
-}
+    grid-row: auto;
+  }
 
-.smallPhoto2{
+  .smallPhoto3 {
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+
+  .smallPhoto4 {
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: auto;
+  }
 }
 
-.smallPhoto3{
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
+@media (width < 480px) {
+  .objectPageContainer {
+    max-width: 100vw;
+  }
 
-.smallPhoto4{
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
+  .photoContainer {
+    grid-template-columns: 1fr;
+  }
 
-.photo{
+  .mainPhoto {
+    position: relative;
+    left: 10vw;
+    width: 100vw;
+    grid-row: auto;
+    grid-column: 1/2;
+  }
+
+  .smallPhoto1,
+  .smallPhoto2,
+  .smallPhoto3,
+  .smallPhoto4 {
+    display: none;
+  }
+
+  .objectTitle {
+    display: none;
+  }
+
+  .objectTitleMobile {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  }
 }

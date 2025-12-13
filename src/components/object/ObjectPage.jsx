@@ -9,7 +9,7 @@ const ObjectPage = () => {
     return <h2>Обьект не найден</h2>;
   }
   return (
-    <div className="pageContainer">
+    <div className={`pageContainer ${styles.objectPageContainer}`}>
       <h1 className={styles.objectTitle}>{object.title}</h1>
       <div className={styles.photoContainer}>
         <img
@@ -38,6 +38,7 @@ const ObjectPage = () => {
           alt={object.title}
         />
       </div>
+       <h1 className={styles.objectTitleMobile}>{object.title}</h1>
     </div>
   );
 };
