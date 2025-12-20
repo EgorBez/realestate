@@ -38,22 +38,24 @@ const Card = ({ images = [], title, price, oldPrice, route }) => {
         {images.length > 1 && (
           <>
             <button
-              className={`${styles.arrow} ${styles.arrowLeft}`}
+              className={`${styles.sliderZone} ${styles.leftZone}`}
               onClick={(e) => {
                 e.preventDefault();
                 prevImage();
               }}
+              aria-label="Предыдущие фото"
             >
-              ◀
+              
             </button>
             <button
-              className={`${styles.arrow} ${styles.arrowRight}`}
+              className={`${styles.sliderZone} ${styles.rightZone}`}
               onClick={(e) => {
                 e.preventDefault();
                 nextImage();
               }}
+              aria-label="Следующие фото"
             >
-              ▶
+              
             </button>
             <div className={styles.dots}>
               {images.map((_, i) => (
