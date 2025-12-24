@@ -10,7 +10,7 @@
   grid-template-rows: 200px 200px;
 }
 
-.objectSubtitle{
+.objectSubtitle {
   margin-block-start: 10px;
 }
 
@@ -107,15 +107,19 @@
   }
 
   .photoContainer {
-    grid-template-columns: 1fr;
+    display: none;
+  }
+
+  .mobileSlider {
+    display: block;
   }
 
   .objectInfoContainer {
     padding-inline: 20px;
   }
 
-  .photo{
-     border-top-left-radius: 0;
+  .photo {
+    border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
 
