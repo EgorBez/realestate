@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 
 const ImgSlider = ({ images = [], className = "", showDots = true }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState("next");
   const touchStartX = useRef(null);
 
   if (!images.length) {
@@ -11,10 +12,12 @@ const ImgSlider = ({ images = [], className = "", showDots = true }) => {
 
   const prev = () => {
     setCurrentIndex((i) => (i === 0 ? images.length - 1 : i - 1));
+    setDirection("prev");
   };
 
   const next = () => {
     setCurrentIndex((i) => (i === images.length - 1 ? 0 : i + 1));
+    setDirection("next");
   };
 
   const onTouchStart = (e) => {
@@ -38,7 +41,11 @@ const ImgSlider = ({ images = [], className = "", showDots = true }) => {
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
     >
-      <img className={styles.img} src={images[currentIndex]} alt="" />
+      <div className={styles.track} style={{transform:`translateX(-${currentIndex * 100}%)`,}}>
+        {images.map((src, i)=> (
+          <img key={i} className={styles.img} src={src} alt=""/>
+        ))}
+      </div>
 
       {images.length > 1 && (
         <>
@@ -58,21 +65,23 @@ const ImgSlider = ({ images = [], className = "", showDots = true }) => {
             }}
             aria-label="Следующее фото"
           ></button>
-          {showDots &&(
-          <div className={styles.dots}>
-            {images.map((_, i) => (
-              <span
-                key={i}
-                className={`${styles.dot} ${
-                  i === currentIndex ? styles.active : ""
-                }`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  setCurrentIndex(i);
-                }}
-              ></span>
-            ))}
-          </div>)}
+          {showDots && (
+            <div className={styles.dots}>
+              {images.map((_, i) => (
+                <span
+                  key={i}
+                  className={`${styles.dot} ${
+                    i === currentIndex ? styles.active : ""
+                  }`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setCurrentIndex(i);
+                    setDirection(i > currentIndex ? "next" : "prev");
+                  }}
+                ></span>
+              ))}
+            </div>
+          )}
         </>
       )}
     </div>

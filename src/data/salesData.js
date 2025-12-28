@@ -7,7 +7,7 @@ const salesData = [
       "solaire2.webp",
       "solaire3.webp",
       "solaire4.webp",
-      "solaire4.webp",
+      "solaire5.webp",
     ],
     title: "Grand Solaire",
     price: "3.280.000",

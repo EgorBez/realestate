@@ -1,6 +1,7 @@
 import styles from "./ObjectPage.module.css";
 import { useParams } from "react-router";
 import allSalesData from "../../data/allSalesData";
+import ImgSlider from "../slider/ImgSlider";
 
 const ObjectPage = () => {
 
@@ -39,6 +40,8 @@ const ObjectPage = () => {
           alt={object.title}
         />
       </div>
+
+      <ImgSlider className={styles.mobileSlider} images={object.images}/>
 
       <h1 className={styles.objectTitleMobile}>{object.title}</h1>
 
