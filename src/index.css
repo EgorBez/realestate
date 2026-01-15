@@ -1,10 +1,18 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body,button{
+body {
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+body,
+button {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-style: normal;

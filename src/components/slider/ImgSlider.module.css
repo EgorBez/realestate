@@ -31,10 +31,6 @@
   background: transparent;
 }
 
-.slider:hover .zone {
-  opacity: 1;
-}
-
 .left {
   left: 0;
 }
@@ -95,4 +91,10 @@
 
 .slide .prev {
   animation-name: slideFromLeft;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .slider:hover .zone {
+    opacity: 1;
+  }
 }
