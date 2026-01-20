@@ -19,7 +19,8 @@
 }
 
 .objectInfoContainer {
-  width: 60%;
+  display: flex;
+  gap: 2rem;
 }
 
 .objectInfo {
@@ -63,6 +64,34 @@
   display: none;
 }
 
+.objectContent {
+  flex: 1 1 50%;
+}
+
+.priceWrapper {
+  flex: 1 0 30%;
+  height: fit-content;
+  padding: 1rem;
+  border: 3px solid var(--color-primary);
+}
+
+.thaiQuotaText {
+  background-color: var(--color-primary);
+}
+
+.foreignQuotaText {
+  background-color: var(--color-secondary);
+}
+
+.quotaText {
+  width: fit-content;
+  padding: 0 0.25rem;
+}
+
+.roomPrice {
+  font-weight: 800;
+}
+
 @media (width < 991px) {
   .photoContainer {
     grid-template-columns: repeat(3, 1fr);
@@ -76,7 +105,6 @@
   }
 
   .objectInfoContainer {
-    width: 100%;
   }
 
   .mainPhoto {

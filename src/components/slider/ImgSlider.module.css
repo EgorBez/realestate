@@ -3,6 +3,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 15px;
+  touch-action: pan-y;
 }
 
 .track {

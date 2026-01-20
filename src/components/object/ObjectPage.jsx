@@ -47,7 +47,33 @@ const ObjectPage = () => {
 
       <h2 className={styles.objectSubtitle}>{object.roomType}</h2>
       <div className={styles.objectInfoContainer}>
-        <ObjectContent content={object.content}/>
+        <ObjectContent
+          className={styles.objectContent}
+          content={object.content}
+        />
+
+        <div className={styles.priceWrapper}>
+          <div className={styles.thaiQuota}>
+            <p className={`${styles.thaiQuotaText} ${styles.quotaText}`}>Тайская квота</p>
+            {object.thaiRooms.map((room, index) => (
+              <p key={index} className={styles.roomType}>
+                {`${room.type} - `}{" "}
+                <span className={styles.roomPrice}>{`от ${room.price}`}</span>
+              </p>
+            ))}
+          </div>
+          {object.foreignRooms && (
+            <>
+              <p className={`${styles.foreignQuotaText} ${styles.quotaText}`}>Иностранная квота</p>
+              {object.foreignRooms.map((room, index) => (
+                <p key={index} className={styles.roomType}>
+                  {`${room.type} - `}{" "}
+                  <span className={styles.roomPrice}>{`от ${room.price}`}</span>
+                </p>
+              ))}
+            </>
+          )}
+        </div>
       </div>
     </div>
   );
