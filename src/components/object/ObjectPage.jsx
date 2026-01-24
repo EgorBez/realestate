@@ -74,6 +74,13 @@ const ObjectPage = () => {
             </>
           )}
         </div>
+        <div className={styles.priceWrapperMobile}>
+        <div className={styles.roomInfoWrapper}>
+        <p className={styles.roomPriceMobile}>{`От ${object.thaiRooms[0].price}`}</p>
+        <p className={styles.roomTypeMobile}>{`${object.thaiRooms[0].type}`}</p>
+        </div>
+        <a href="https://t.me/HappyHomeAsiaAgency" target="blank" className={`${styles.infoLinkMobile} telegramButton`}>Подробнее</a>
+        </div>
       </div>
     </div>
   );

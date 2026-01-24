@@ -125,6 +125,16 @@ const Header = () => {
           </div>
         </div>
 
+         <NavLink
+              to="/transfer"
+              className={({ isActive }) =>
+                isActive ? `${styles.active} ${styles.navItem}` : styles.navItem
+              }
+              onClick={() => setMenuOpen(false)}
+            >
+              Трансфер
+            </NavLink>
+
         <div className={styles.dropdown}>
           <span className={styles.navItem}>Остальные услуги</span>
           <div className={styles.dropdownContent}>

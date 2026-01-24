@@ -1,10 +1,10 @@
-import styles from "./Fasttrack.module.css";
+import styles from "./Transfer.module.css";
 
-const Fasttrack = () => {
+const Transfer = () => {
   return (
     <div className="pageContainer">
       <h1 className="pageHeader">
-        Гарантированный проход через границу или фаст трек
+        Для вашего удобства мы организуем трансфер 24/7
       </h1>
       <img className="pageBanner" src="fastTrackBanner.webp" alt="фаст трек" />
       <div className="textContainer">
@@ -54,4 +54,4 @@ const Fasttrack = () => {
   );
 };
 
-export default Fasttrack;
+export default Transfer;
