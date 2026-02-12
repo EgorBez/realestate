@@ -1,6 +1,6 @@
 .card {
   display: flex;
-  width: clamp(250px, 100%, 450px);
+  width: clamp(200px, 100%, 450px);
   flex-direction: column;
   text-decoration: none;
   color: black;

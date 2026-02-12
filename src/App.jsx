@@ -16,6 +16,7 @@ import SocialButton from "./components/socialButton/SocialButton";
 import Secondary from "./components/secondary/Secondary";
 import Installment from "./components/installment/Installment";
 import ObjectPage from "./components/object/objectPage";
+import Events from "./components/events/Events";
 
 function App() {
   const location = useLocation();
@@ -47,7 +48,7 @@ function App() {
         <Route path="/transfer" element={<Transfer />} />
         <Route path="/exchange" element={<Exchange />} />
         <Route path="/documents" element={<Documents />} />
-        <Route path="/events" element={<Home />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/fasttrack" element={<Fasttrack />} />
         <Route path="/secondary" element={<Secondary />} />
         <Route path="/installment" element={<Installment />} />

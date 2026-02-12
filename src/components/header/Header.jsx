@@ -101,7 +101,7 @@ const Header = () => {
         </NavLink>
 
         <div className={styles.dropdown}>
-          <span className={styles.navItem}>Аренда транспорта</span>
+          <span className={styles.navItem}>Транспорт</span>
           <div className={styles.dropdownContent}>
             <NavLink
               to="/carsrent"

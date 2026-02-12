@@ -58,6 +58,10 @@
     .gridContainer{
         grid-template-columns: repeat(3,1fr);
     }
+
+    .textContainer{
+        width: 100%;
+    }
 } 
 
 @media (width < 900px) {
