@@ -6,7 +6,7 @@ const Transfer = () => {
       <h1 className="pageHeader">
         Для вашего удобства мы организуем трансфер 24/7
       </h1>
-      <img className="pageBanner" src="fastTrackBanner.webp" alt="фаст трек" />
+      <img className="pageBanner" src="transfer.webp" alt="фаст трек" />
       <div className="textContainer">
         <p className="pageText">
           🚦 Passage with an officer - он же зеленый коридор с гарантированным

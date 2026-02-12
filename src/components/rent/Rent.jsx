@@ -5,7 +5,7 @@ import Card from "../card/Card";
 const Rent = () => {
   return (
     <div className="pageContainer">
-      <h1 className="pageHeader">Аренда недвижимости</h1>
+      <h1 className="pageHeader">Аренда недвижимости (примеры квартир)</h1>
       <div className="gridContainer">
         {rentData.map((item, index) => (
           <Card
