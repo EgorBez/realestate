@@ -18,7 +18,7 @@ const Rent = () => {
           />
         ))}
       </div>
-        <a className="telegramButton" href="https://t.me/HappyHomePattaya" target="_blank">Больше в телеграмм</a>
+        <a className="telegramButton" href="https://t.me/HappyHomePattaya/9" target="_blank">Больше в телеграмм</a>
     </div>
   );
 };
