@@ -828,7 +828,7 @@ const salesData = [
       "harmonia5.webp",
     ],
     title: "Harmonia City Garden",
-    price: "2,494,000",
+    price: "От 2,494,000",
 
     content: [
       {
