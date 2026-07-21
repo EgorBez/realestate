@@ -1,6 +1,6 @@
 const rentData = [
   {
-    images: ["riviera.webp", "riviera2.webp", "riviera3.webp", "riviera4.webp", "riviera5.webp", "riviera6.webp", "riviera7.webp"],
+    images: [""],
     title: "1 bedroom в Riviera Jomtien",
     price: "23000 бат",
     route: "https://t.me/HappyHomePattaya/9/438"
