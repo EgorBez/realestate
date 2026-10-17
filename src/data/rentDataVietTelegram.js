@@ -1,11 +1,5 @@
 const listings = [
   {
-    images: [import.meta.env.BASE_URL + "telegram_f7ccde5045_11453.jpg"],
-    title: "Muong Thanh Riverside",
-    price: "",
-    route: "https://t.me/AsiaHomeNhaTrang/9/11453",
-  },
-  {
     images: [import.meta.env.BASE_URL + "telegram_64312c0887_11513.jpg", import.meta.env.BASE_URL + "telegram_64312c0887_11514.jpg", import.meta.env.BASE_URL + "telegram_64312c0887_11515.jpg", import.meta.env.BASE_URL + "telegram_64312c0887_11516.jpg", import.meta.env.BASE_URL + "telegram_64312c0887_11517.jpg", import.meta.env.BASE_URL + "telegram_64312c0887_11518.jpg", import.meta.env.BASE_URL + "telegram_64312c0887_11519.jpg", import.meta.env.BASE_URL + "telegram_64312c0887_11520.jpg", import.meta.env.BASE_URL + "telegram_64312c0887_11521.jpg", import.meta.env.BASE_URL + "telegram_64312c0887_11522.jpg"],
     title: "Gold Coast",
     price: "",
@@ -40,6 +34,12 @@ const listings = [
     title: "Virgo",
     price: "",
     route: "https://t.me/AsiaHomeNhaTrang/9/11557",
+  },
+  {
+    images: [import.meta.env.BASE_URL + "telegram_a328159003_11582.jpg", import.meta.env.BASE_URL + "telegram_a328159003_11583.jpg", import.meta.env.BASE_URL + "telegram_a328159003_11584.jpg", import.meta.env.BASE_URL + "telegram_a328159003_11585.jpg", import.meta.env.BASE_URL + "telegram_a328159003_11586.jpg", import.meta.env.BASE_URL + "telegram_a328159003_11587.jpg", import.meta.env.BASE_URL + "telegram_a328159003_11588.jpg", import.meta.env.BASE_URL + "telegram_a328159003_11589.jpg", import.meta.env.BASE_URL + "telegram_a328159003_11590.jpg"],
+    title: "Oceanus",
+    price: "",
+    route: "https://t.me/AsiaHomeNhaTrang/9/11582",
   },
 ];
 
