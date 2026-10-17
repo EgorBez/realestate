@@ -42,10 +42,10 @@ const listings = [
     route: "https://t.me/AsiaHomePattaya/8/1605",
   },
   {
-    images: [import.meta.env.BASE_URL + "telegram_aa05b0d032_1681.jpg"],
-    title: "Chevrolet Captiva (2.2 diesel, white, 2022)",
-    price: "От 17000 бат/месяц",
-    route: "https://t.me/AsiaHomePattaya/12/1681",
+    images: [import.meta.env.BASE_URL + "telegram_2dda803fa9_1682.jpg"],
+    title: "Mitsubishi Attrage (white, 2019)",
+    price: "От 12000 бат/месяц",
+    route: "https://t.me/AsiaHomePattaya/12/1682",
   },
 ];
 
