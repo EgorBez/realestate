@@ -41,6 +41,12 @@ const listings = [
     price: "",
     route: "https://t.me/AsiaHomePattaya/8/1605",
   },
+  {
+    images: [import.meta.env.BASE_URL + "telegram_aa05b0d032_1681.jpg"],
+    title: "Chevrolet Captiva (2.2 diesel, white, 2022)",
+    price: "От 17000 бат/месяц",
+    route: "https://t.me/AsiaHomePattaya/12/1681",
+  },
 ];
 
 export default listings;
