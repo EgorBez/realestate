@@ -1,11 +1,5 @@
 const listings = [
   {
-    images: [import.meta.env.BASE_URL + "telegram_46b44a522c_1493.jpg"],
-    title: "Toyota Vios (white, 2011)",
-    price: "11000 бат/месяц (цена указана на октябрь)",
-    route: "https://t.me/AsiaHomePattaya/12/1493",
-  },
-  {
     images: [import.meta.env.BASE_URL + "telegram_5d700a4db4_1606.jpg", import.meta.env.BASE_URL + "telegram_5d700a4db4_1607.jpg", import.meta.env.BASE_URL + "telegram_5d700a4db4_1608.jpg", import.meta.env.BASE_URL + "telegram_5d700a4db4_1609.jpg"],
     title: "Gallery Condo",
     price: "14000 бат/месяц",
@@ -40,6 +34,12 @@ const listings = [
     title: "Laguna Beach 2",
     price: "17500 бат/месяц",
     route: "https://t.me/AsiaHomePattaya/9/1668",
+  },
+  {
+    images: [import.meta.env.BASE_URL + "telegram_04c9a63a54_1683.jpg", import.meta.env.BASE_URL + "telegram_04c9a63a54_1684.jpg", import.meta.env.BASE_URL + "telegram_04c9a63a54_1685.jpg", import.meta.env.BASE_URL + "telegram_04c9a63a54_1686.jpg", import.meta.env.BASE_URL + "telegram_04c9a63a54_1687.jpg", import.meta.env.BASE_URL + "telegram_04c9a63a54_1688.jpg", import.meta.env.BASE_URL + "telegram_04c9a63a54_1689.jpg", import.meta.env.BASE_URL + "telegram_04c9a63a54_1690.jpg", import.meta.env.BASE_URL + "telegram_04c9a63a54_1691.jpg"],
+    title: "Laguna Beach 2",
+    price: "17500 бат/месяц",
+    route: "https://t.me/AsiaHomePattaya/9/1683",
   },
   {
     images: [import.meta.env.BASE_URL + "telegram_9900fc9a36_1605.jpg"],
