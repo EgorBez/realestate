@@ -1,5 +1,11 @@
 const listings = [
   {
+    images: [import.meta.env.BASE_URL + "telegram_46b44a522c_1493.jpg"],
+    title: "Toyota Vios (white, 2011)",
+    price: "11000 бат/месяц (цена указана на октябрь)",
+    route: "https://t.me/AsiaHomePattaya/12/1493",
+  },
+  {
     images: [import.meta.env.BASE_URL + "telegram_5d700a4db4_1606.jpg", import.meta.env.BASE_URL + "telegram_5d700a4db4_1607.jpg", import.meta.env.BASE_URL + "telegram_5d700a4db4_1608.jpg", import.meta.env.BASE_URL + "telegram_5d700a4db4_1609.jpg"],
     title: "Gallery Condo",
     price: "14000 бат/месяц",
@@ -40,12 +46,6 @@ const listings = [
     title: "dfgfdgfdffd",
     price: "",
     route: "https://t.me/AsiaHomePattaya/8/1605",
-  },
-  {
-    images: [import.meta.env.BASE_URL + "telegram_2dda803fa9_1682.jpg"],
-    title: "Mitsubishi Attrage (white, 2019)",
-    price: "От 12000 бат/месяц",
-    route: "https://t.me/AsiaHomePattaya/12/1682",
   },
 ];
 
