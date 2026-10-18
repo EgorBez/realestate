@@ -15,7 +15,7 @@ import Documents from "./components/documents/Documents";
 import SocialButton from "./components/socialButton/SocialButton";
 import Secondary from "./components/secondary/Secondary";
 import Installment from "./components/installment/Installment";
-import ObjectPage from "./components/object/objectPage";
+import ObjectPage from "./components/object/ObjectPage";
 import Events from "./components/events/Events";
 
 function App() {
